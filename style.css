@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* Style for Navbar Section....................................................................*/
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: "Montserrat", sans-serif;
+    background: turquoise;
+    z-index: 1;
+}
+.navbar.sticky{
+    padding: 15px;
+    background: tomato;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0.4px 0.5px white;
+}
+.navbar .logo a:hover{
+    color: white;
+    text-shadow: 0.5px 0.6px black;
+}
+.navbar .logo a span{
+    color: orange;
+    text-shadow: 0.5px 0.6px black;
+}
+.navbar .logo a span:hover{
+    color: black;
+    text-shadow: 0.5px 0.6px white;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    text-shadow: 0.4px 0.5px black;
+}
+.navbar .menu li a{
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 50px;
+    transition: 0.3s linear;
+}
+.navbar .menu li a:hover{
+    color:black;
+}
+/* Menu Button*/
+.menu-btn{
+    cursor: pointer;
+}
+/* Style for Home Section....................................................................*/
+.Home{
+    display: flex;
+    background: url("images/banner.jpg") repeat center;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+    max-height: 840px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+}
+.Home .max-width {
+    margin: auto 0 auto 30px;
+}
+.Home .home-content .text-1{
+    font-size: 25px;
+    text-shadow: 0.4px 0.5px black;
+}
+.Home .home-content .text-2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-left: -3px;
+    text-shadow: 0.3px 0.5px black;
+}
+.Home .home-content .text-3{
+    font-size: 25px;
+    text-shadow: 0.4px 0.5px black;
+}
+.Home .home-content a{
+    display: inline-block;
+    background: orange;
+    color: black;
+    font-size: 25px;
+    padding: 12px 24px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 0.2px solid black;
+    text-shadow: 0.3px 0.2px black;
+    transition: all 0.3s linear;
+}
+.Home .home-content a:hover{
+    color: white;
+    background: black;
+}
+/* Style for About Section.................................................................... */
+section{
+    padding: 70px 0;
+}
+.About{
+    font-family: "Montserrat", sans-serif;
+    background-color: turquoise;
+    border-bottom: 2px solid purple;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.About .title{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+    color: orange;
+    text-shadow: 0.5px 0.6px black;
+}
+.About .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-between;
+}
+.About .about-content .column{
+    width: 100%;
+}
+.About .about-content .left{
+    width: 40%;
+}
+.About .about-content .left img{
+    /*height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 18px;*/
+    height: 70%;
+    width: 75%;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px solid white;
+    margin-left: 20px;
+}
+.About .about-content .right{
+    width: 60%;
+}
+.About .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 0.3px 0.5px gray;
+ }
+.About .about-content .right p{
+    font-size: 18px;
+    text-align: normal;
+}
+/* Style for Services Section.................................................................... */
+.Services{
+    font-family: "Montserrat", sans-serif;
+    background: turquoise;
+    border-bottom: 2px solid purple;
+    /*Added
+    display: flex;
+    background: url(images/banner-3.jpg) repeat center;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: scroll;*/
+}
+.Services .title{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 100px;
+    color: orange;
+    text-shadow: 0.5px 0.6px black;
+}
+.Services .services-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-between;
+}
+.Services .services-content .card{
+    width: calc(33% - 20px);
+    background: white;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 20px 25px;
+}
+.Services .services-content :hover{
+    background: orange;
+}
+.Services .services-content .card .box{
+    transition: all 0.3s ease;
+}
+.Services .services-content .card .box :hover{
+    transform: scale(1.10);
+}
+.Services .services-content .card img{
+    height: 60px;
+    width: 60px;
+}
+.Services .services-content .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-shadow: 0.3px 0.5px gray;
+}
+.Services .services-content p{
+    font-size: 18px;
+}
+/* Style for Skills Section.................................................................... */
+.Skills{
+    font-family: "Montserrat", sans-serif;
+    background: turquoise;
+    border-bottom: 2px dashed purple;
+}
+.Skills .title{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 100px;
+    color: orange;
+    text-shadow: 0.5px 0.6px black;
+}
+.Skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-between;
+}
+.Skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.Skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-shadow: 0.3px 0.5px gray;
+}
+.Skills .skills-content .left .p{
+    text-align: justify;
+    font-size: 18px;
+}
+.Skills .skills-content a{
+    display: inline-block;
+    background: orange;
+    color: black;
+    font-size: 20px;
+    padding: 12px 24px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 0.2px solid black;
+    text-shadow: 0.3px 0.2px black;
+    transition: all 0.3s linear;
+}
+.Skills .skills-content a:hover{
+    color: white;
+    background: black;
+}
+.Skills .skills-content .right .bar{
+    margin-bottom: 15px;
+}
+.Skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.Skills .skills-content .right .info:hover{
+    color: tomato;
+}
+.Skills .skills-content .right span{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+}
+.Skills .skills-content .right .line{
+    height: 7px;
+    width: 100%;
+    background: white;
+    position: relative;
+}
+.Skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: orange;
+}
+.Skills .skills-content .right .html::before{
+    width: 95%;
+}
+.Skills .skills-content .right .css::before{
+    width: 85%;
+}
+.Skills .skills-content .right .js::before{
+    width: 80%;
+}
+.Skills .skills-content .right .php::before{
+    width: 80%;
+}
+.Skills .skills-content .right .mysql::before{
+    width: 80%;
+}
+/* Style for Contact Section.................................................................... */
+.Contact{
+    font-family: "Montserrat", sans-serif;
+    /*background: turquoise;
+    border-bottom: 2px solid purple;*/
+    /*Added*/
+    display: flex;
+    background: url(images/banner-4.jpg) repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.Contact .title{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 100px;
+    color: orange;
+    text-shadow: 0.5px 0.6px black;
+}
+.Contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: space-between;
+}
+.Contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.Contact .contact-content .column .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-shadow: 0.3px 0.5px gray;
+}
+.Contact .contact-content .left p{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.Contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-self: center;
+}
+.Contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.Contact .contact-content .left img{
+    height: 30px;
+    width: 30px;
+}
+.Contact .contact-content .info .head{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 0;
+    text-shadow: 0.3px 0.2px white;
+}
+.Contact .contact-content .info .sub-title{
+    font-weight: 600;
+    text-shadow: 0.3px 0.2px white;
+}
+.Contact .right form .fields{
+    display: flex;
+}
+.Contact .right form .field,
+.Contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.Contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.Contact .right form .name{
+    margin-right: 10px;
+}
+.Contact .right form .email{
+    margin-left: 10px;
+}
+.Contact .right form .field input,
+.Contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+}
+.Contact .right form .field input:focus,
+.Contact .right form .textarea textarea:focus{
+    border-color: red;
+}
+.Contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.Contact .right form .button{
+    height: 50px;
+    width: 150px;
+}
+.Contact .right form .button button{
+    height: 100%;
+    width: 100%;
+    background: orange;
+    color: black;
+    border: none;
+    font-size: 18px;
+    border-radius: 20px;
+    border: 0.2px solid black;
+    transition: all 0.3s linear;
+}
+.Contact .right form .button button:hover{
+    color:white;
+    background: black;
+}
+/*Styling for Footer.................................................................... */
+footer{
+    font-family: "Monteserrat", sans-serif;
+    text-align: center;
+    pad: 10px 25px;
+    background: black;
+    color: white;
+}
+footer span a{
+    color: orange;
+    font-size: 18px;
+}
+footer span a:hover{
+    color: orange;
+    text-shadow: 0.3px 0.4px red;
+}
+/*Reponsive Media Query*/
+@media (max-width: 1920px) {
+    .Home .max-width{
+        margin-left: 0px;
+    }
+    .menu-btn{
+        display: none;
+        z-index: 999;
+    }
+}
+@media (max-width: 1104px) {
+    .About .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    /*
+    .navbar .menu{
+        position: fixed;
+        height: 80vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: black;
+        opacity: 90%;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px;
+        font-size: 25px;
+    }*/
+}
+@media (max-width: 947px) {
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 80vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        opacity: 90%;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px;
+        font-size: 25px;
+    }
+    .Home .home-content .text-2{
+        font-size: 35px;
+    }
+    .Home .home-content a{
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .About .about-content .column{
+        width: 100%;
+    }
+    .About .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .About .about-content .right{
+        flex: 100%;
+        text-align: center;
+    }
+    .Services .services-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 35px;
+    }
+    .Skills .skills-content .column,
+    .Contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .Skills .skills-content .left .text,
+    .Contact .contact-content .left .text{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 18px;
+    }
+    .Skills .skills-content .left p,
+    .Contact .contact-content .left p{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 25px;
+    }
+    .Skills .skills-content .right,
+    .Contact .contact-content .right{
+        flex: 100%;
+    }
+/*My Added Style---------------------*/
+    .navbar .logo a{
+        font-size: 35px;
+    }
+/*My Added Style---------------------*/
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .Services .services-content .card{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .Contact .right form .fields{
+        flex-direction: column;
+    }
+    .Contact .right form .name,
+    .Contact .right form .email{
+        margin: 0;
+    }
+}
